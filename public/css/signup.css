@@ -1,0 +1,68 @@
+@font-face {
+    font-family: Brandon;
+    src: url(/assets/Brandon.otf);
+  }
+
+body {
+	margin: 0;
+	font-family: Brandon;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+}
+
+header {
+	background-color: #172554;
+	padding: 20px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content:right;
+    }
+
+    nav li {
+    display: inline-block;
+    margin: 0 25px;
+    padding: 0;
+    margin-top: -50px;
+    }
+
+    nav .logo{
+      height: 50px;
+      width: 90px;
+      margin-left: 20px;
+
+    }
+
+    nav a{
+    text-decoration: none;
+    color: #fdfbfb;
+    position: relative;
+    font-size: 20px;
+  }
+
+  nav a::after{
+    content: '';
+    width: 0%;
+    height:3px;
+    background: #f32805;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -7px;
+    transition: 0.5s;
+  }
+
+  nav a:hover{
+    text-decoration: none;
+    color: #f32805;
+  }
+  nav a:hover:after{
+   width: 100%;
+  }
+
+

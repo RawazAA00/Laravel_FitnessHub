@@ -1,0 +1,97 @@
+@font-face {
+    font-family: Brandon;
+    src: url(/assets/Brandon.otf);
+  }
+
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Brandon;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    }
+
+    header {
+    background-color: #172554;
+    padding: 20px;
+    }
+
+    nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content:right;
+    }
+
+    nav li {
+    display: inline-block;
+    margin: 0 25px;
+    padding: 0;
+    margin-top: -50px;
+    }
+
+    nav .logo{
+      height: 50px;
+      width: 90px;
+      margin-left: 20px;
+
+    }
+
+    nav a{
+    text-decoration: none;
+    color: #fdfbfb;
+    position: relative;
+    font-size: 20px;
+  }
+
+  nav a::after{
+    content: '';
+    width: 0%;
+    height:3px;
+    background: #f32805;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -7px;
+    transition: 0.5s;
+  }
+
+  nav a:hover{
+    text-decoration: none;
+    color: #f32805;
+  }
+  nav a:hover:after{
+   width: 100%;
+  }
+
+#classes img{
+    border: 1px solid #172554;
+    border-radius: 20px;
+    padding: 35px;
+    background-color: #172554;
+}
+
+  .cta-button {
+    text-decoration: none;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 2px solid #ff4742;
+    color: #fff;
+    background-color: #ff4742;
+    padding: 6px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 4px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1.5px 0px;
+    font-weight: 800;
+    font-size: 16px;
+    height: 25px;
+    height: 40px;
+    }
+
+    .cta-button:hover {
+      background-color: #fff;
+      color: #ff4742;
+    }
